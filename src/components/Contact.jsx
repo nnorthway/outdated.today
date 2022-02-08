@@ -15,23 +15,23 @@ function Contact() {
   const [email, setEmail] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const form = useRef()
-  const [successTitle, setSuccessTitle] = useState('Success')
+  const [successTitle] = useState('Success')
   const [successMessage, setSuccessMessage] = useState('Your fact has been sent!')
   const [successDisplay, setSuccessDisplay] = useState(false)
   const [successClass, setSuccessClass] = useState('')
-  const [errorTitle, setErrorTitle] = useState('Oh no!')
+  const [errorTitle] = useState('Oh no!')
   const [errorMessage, setErrorMessage] = useState('Something broke - give it another shot')
   const [errorDisplay, setErrorDisplay] = useState(false)
   const [errorClass, setErrorClass] = useState('')
 
   const validateEmail = email => {
-    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const regex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/
     return regex.test(String(email).toLowerCase())
   }
 
   const hideErrorMessage = () => {
     setErrorClass('invisible')
-    let rmClass = setTimeout(() => {
+    setTimeout(() => {
       setErrorClass('')
       setErrorDisplay(false)
     }, 1000)
@@ -41,7 +41,7 @@ function Contact() {
   const hideSuccessMessage = () => {
     clearTimeout()
     setSuccessClass('invisible')
-    let rmClass = setTimeout(() => {
+    setTimeout(() => {
       setSuccessClass('')
       setSuccessDisplay(false)
     }, 1000)
@@ -53,10 +53,10 @@ function Contact() {
     if (msg) {
       setErrorMessage(msg)
     }
-    let setClass = setTimeout(() => {
+    setTimeout(() => {
       setErrorClass('')
     })
-    let hide = setTimeout(() => {
+    setTimeout(() => {
       hideErrorMessage()
     }, 10000)
   }
@@ -67,10 +67,10 @@ function Contact() {
     if (msg) {
       setSuccessMessage(msg)
     }
-    let setClass = setTimeout(() => {
+    setTimeout(() => {
       setSuccessClass('')
     })
-    let hide = setTimeout(() => {
+    setTimeout(() => {
       hideErrorMessage()
     }, 10000)
   }

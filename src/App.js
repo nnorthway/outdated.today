@@ -1,11 +1,11 @@
 import { React, useState } from 'react'
-import Bulma from 'bulma'
 import Data from './data/data'
 import Fact from './components/Fact'
+import 'bulma/css/bulma.min.css'
 import './components/styles/index.scss'
 
 function App() {
-  let [facts, setFacts] = useState(Data)
+  let [facts] = useState(Data)
 
   let getYears = () => {
     let allYears = facts.map(item => item.year);
@@ -45,10 +45,10 @@ function App() {
                 later proven to be incorrect. 
               </p>
               <select className='restyled' onChange={handleChange}>
-                  <option value='select'>Select</option>
+                  <option value='select' selected={selectedValue === 'select'?'true':'false'}>Select</option>
                   {
                     years.map((item) => (
-                      <option value={item} key={item}>{item}</option>
+                      <option value={item} key={item} selected={selectedValue === item?'true':'false'}>{item}</option>
                     ))
                   }
               </select>
