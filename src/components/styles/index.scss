@@ -26,6 +26,16 @@ select.restyled {
   &::-ms-expand {
     display: none;
   }
+  @media (max-width: 768px) {
+    font-size: 1em;
+    padding: .5em 2em .5em 1em;
+  }
+}
+
+.container {
+  @media (max-width: 768px) {
+    padding: .5em;
+  }
 }
 
 .smallcaps {
@@ -38,6 +48,9 @@ select.restyled {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
   .card {
     grid-column: span 1;
     display: flex;
