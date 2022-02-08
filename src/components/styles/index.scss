@@ -1,0 +1,86 @@
+main {
+  min-height: 100vh;
+}
+
+select.restyled {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1em 2em 1em 1em;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: 2em;
+  color: white;
+  border-radius: 2em;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+  display: grid;
+  grid-template-areas: 'select';
+  align-items: center;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><polygon fill='%23fff' points='100 0, 0 0, 50 100' /></svg>");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1em) center;
+  background-size: 1em;
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.smallcaps {
+  color: rgba(44,44,44,.44);
+}
+
+.cards {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  .card {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    .card-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      :last-child {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+.hero-body a {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+    opacity: .8;
+  }
+}
+
+.message {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  z-index: 999;
+  display: none;
+  opacity: 1;
+  transition: opacity .4s ease;
+  &.invisible {
+    opacity: 0;
+    transition: opacity .4s ease;
+  }
+  &.is-active {
+    display: block;
+    + .is-active {
+      top: calc(108px + 2em);
+    }
+  }
+}
