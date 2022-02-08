@@ -19,7 +19,7 @@ function About() {
             <div className='column is-three-fifths'>
               <h3 className='is-size-3'>If you want to contribute...</h3>
               <p>
-                I'd really appreciate that. Credit will be given where it's due. Fill out the form below, and I'll let you know when it's added to the site. Additionally, you can add an issue on the GitHub repo, which will be closed when I add it. 
+                I'd really appreciate that. Credit will be given where it's due. Fill out the form below, and I'll let you know when it's added to the site. Additionally, you can add an issue on the <a href='https://github.com/nnorthway/outdated.today' target='_blank' rel='noreferrer'>GitHub repo</a>, which will be closed when I add it. 
               </p>
               <hr />
               <Contact />

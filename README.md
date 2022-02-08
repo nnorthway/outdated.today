@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# outdated.today
+#### you were taught wrong
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+outdated.today is a collection of "facts" that were taught that were later proven to be wrong. 
 
-## Available Scripts
+### contributing
+use the contact form on the "about" page to submit a fact, or submit an issue in the github repo using the following template: 
 
-In the project directory, you can run:
+```
+your name (required)
+your email (required)
+how you'd like to be credited (required)
+a link to your twitter/github/website/twitch/anything i guess (optional)
+the year your factoid was proven wrong (required)
+what was taught (required)
+what is now known to be true (required)
+source link (required)
+additional source link (optional, but nice)
+```
 
-### `npm start`
+your name and email will not be published on the website (unless that's what you list in the credit fields). i'll notify you with an email when i update the repo with your fact, or let you know that it didn't pass the smell test. if you use an issue to submit the fact, i'll close it with a note about whether the fact was approved or not. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### about
+this was built so I could learn about react and fulfill a promise I made many moons ago. it's buit on react (obviously) and uses [Bulma](https://bulma.io), [EmailJS](https://emailjs.com), [Elastic Email](https://elasticemail.com/), [React Router](https://reactrouter.com/), and [create-react-app](https://create-react-app.dev/). It's hosted on [Netlify](https://netlify.com) and I bought the domain on [Namecheap](https://namecheap.com) because they're pretty okay at selling me domains. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+this was my first unguided shot at building a react app and i think i did kinda okay. don't roast me too hard though thanks. 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### contributing in other ways
+i appreciate your feedback and welcome you to submit issues. please don't submit any pull requests though, i'd really like to keep the code in here mine. 

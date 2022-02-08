@@ -18,7 +18,6 @@ function App() {
 
   let years = getYears();
   let [yearFacts, setYearFacts] = useState([])
-  let [selectedValue, setSelectedValue] = useState('select')
 
   let getYearFacts = (year) => {
     let result = facts.filter(item => item.year === parseInt(year))
@@ -27,7 +26,6 @@ function App() {
 
   let handleChange = (event) => {
     setYearFacts(getYearFacts(parseInt(event.target.value)))
-    setSelectedValue(event.target.value)
   }
 
   return (
@@ -44,11 +42,11 @@ function App() {
                 Pick the year you graduated high school and find out what you were taught that was 
                 later proven to be incorrect. 
               </p>
-              <select className='restyled' onChange={handleChange}>
-                  <option value='select' selected={selectedValue === 'select'?'true':'false'}>Select</option>
+              <select className='restyled' onChange={handleChange} defaultValue='select'>
+                  <option value='select'>Select</option>
                   {
                     years.map((item) => (
-                      <option value={item} key={item} selected={selectedValue === item?'true':'false'}>{item}</option>
+                      <option value={item} key={item}>{item}</option>
                     ))
                   }
               </select>
