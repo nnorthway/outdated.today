@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -9,7 +10,8 @@ function Footer() {
             <p>
               This project was created by <a href='https://natenorthway.com/' target='_blank' rel='noreferrer'>Nate Northway</a>. <br />
               View this project on <a href='https://github.com/' target='_blank' rel='noreferrer'>GitHub</a>.<br />
-              Copyright &copy; {new Date().getFullYear()} Nate Northway
+              Copyright &copy; {new Date().getFullYear()} Nate Northway <br />
+              <Link to='/privacy'>Privacy Policy</Link>
             </p>
           </div>
         </div>
@@ -18,4 +20,4 @@ function Footer() {
   )
 }
 
-export default Footer;
+export default Footer

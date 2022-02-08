@@ -58,6 +58,16 @@ let data = [
     "other_link": "",
     "reported_by": "outdated.today",
     "on": "2022/02/02"
+  },
+  {
+    "id": 7,
+    "year": 2020,
+    "taught": "The Aztec People believed the Conquistadors were Gods",
+    "fact": "This was a myth started by Francisco López de Gómara. Cortés own letters make no mention of being interpreted as or mistaken for a god.",
+    "link": "https://daily.jstor.org/the-mexica-didnt-believe-the-conquistadors-were-gods/",
+    "other_link": "",
+    "reported_by": "Nate Northway",
+    "on": "2022/02/07"
   }
 ]
 
