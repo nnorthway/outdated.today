@@ -9,7 +9,7 @@ function Footer() {
           <div className='column is-half'>
             <p>
               This project was created by <a href='https://natenorthway.com/' target='_blank' rel='noreferrer'>Nate Northway</a>. <br />
-              View this project on <a href='https://github.com/' target='_blank' rel='noreferrer'>GitHub</a>.<br />
+              View this project on <a href='https://github.com/nnorthway/outdated.today' target='_blank' rel='noreferrer'>GitHub</a>.<br />
               Copyright &copy; {new Date().getFullYear()} Nate Northway <br />
               <Link to='/privacy'>Privacy Policy</Link>
             </p>
