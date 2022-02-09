@@ -6,6 +6,7 @@ import './components/styles/index.scss'
 
 function App() {
   let [facts] = useState(Data)
+  let [randomFact, setRandomFact] = useState(facts[parseInt(Math.random() * facts.length)])
 
   let getYears = () => {
     let allYears = facts.map(item => item.year);
@@ -24,8 +25,17 @@ function App() {
     return result ? result : null
   }
 
+  let getRandomFact = () => {
+    return facts[parseInt(Math.random() * facts.length)]
+  }
+
   let handleChange = (event) => {
-    setYearFacts(getYearFacts(parseInt(event.target.value)))
+    if (event.target.value === 'random') {
+      setRandomFact(getRandomFact())
+      setYearFacts({})
+    } else {
+      setYearFacts(getYearFacts(parseInt(event.target.value)))
+    }
   }
 
   return (
@@ -42,8 +52,8 @@ function App() {
                 Pick the year you graduated high school and find out what you were taught that was 
                 later proven to be incorrect. 
               </p>
-              <select className='restyled' onChange={handleChange} defaultValue='select'>
-                  <option value='select'>Select</option>
+              <select className='restyled' onChange={handleChange} defaultValue='random'>
+                  <option value='random'>Random</option>
                   {
                     years.map((item) => (
                       <option value={item} key={item}>{item}</option>
@@ -57,9 +67,11 @@ function App() {
       <div className='container'>
         <div className='cards'>
           {
+            yearFacts.length ? 
             yearFacts.map((item) => (
               <Fact item={item} key={item.id} />
-            ))
+            )) : 
+            <Fact item={randomFact} />
           }
         </div>
       </div>

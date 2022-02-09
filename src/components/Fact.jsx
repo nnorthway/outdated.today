@@ -7,7 +7,7 @@ function Fact({item}) {
       <div className='card-content'>
         <h1 className='card-title is-size-3'>You were taught: {item.taught}</h1>
         <p className='is-size-5'>
-          But as it turns out: {item.fact}
+          But as it turns out, in {item.year}, it was discovered: {item.fact}
         </p>
         <p className='smallcaps'>
           Added by {item.reported_by} on {d.toLocaleDateString()}
