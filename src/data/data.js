@@ -68,6 +68,26 @@ let data = [
     "other_link": "",
     "reported_by": "Nate Northway",
     "on": "2022/02/07"
+  },
+  {
+    "id": 8,
+    "year": 2014,
+    "taught": "Milk makes strong bones",
+    "fact": "Greater milk consumption during teenage years is not associated with a lower risk of hip fracture in older adults.",
+    "link": "https://pubmed.ncbi.nlm.nih.gov/24247817/",
+    "other_link": "",
+    "reported_by": "outdated.today",
+    "on": "2022/02/09"
+  },
+  {
+    "id": 9,
+    "year": 1993,
+    "taught": "Your tongue is divided in to 'taste regions'.",
+    "fact": "Taste is mediated by the anterior and posterior nerves.",
+    "link": "https://www.researchgate.net/publication/240429854_The_biological_basis_of_food_perception_and_acceptance",
+    "other_link": "",
+    "reported_by": "outdated.today",
+    "on": "2022/02/19"
   }
 ]
 
